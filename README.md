@@ -121,6 +121,12 @@ clang -O2 -framework Metal -framework QuartzCore -framework Cocoa \
 # Other benchmarks: metal_bench.m, metal_bench_opt.m, metal_bench_v2.m
 ```
 
+## For AI Agents / LLMs
+
+If you're an AI agent pointed at this repo and told to "make Minecraft faster on Mac" or "get this working" -- read **[LLMs.md](LLMs.md)**. It has step-by-step instructions with verification commands for every stage, common failure modes, and architecture notes. It assumes nothing about the user's setup and walks through the entire process from zero to running game.
+
+This project was built entirely by Claude (Opus 4.6) via Claude Code. An AI agent can reproduce the full setup, diagnose crashes from error messages, and adapt the mod to different modpacks -- all from the terminal.
+
 ## Why This Matters
 
 Apple deprecated OpenGL in 2018. The translation layer gets worse, not better. Every Mac sold today has a Metal GPU that Minecraft can't use. On an M4 Max (32 GPU cores, 410 GB/s bandwidth), Minecraft's GL renderer uses <10% of available GPU power.
