@@ -1,0 +1,50 @@
+# Build artifacts
+build/
+.gradle/
+out/
+run/
+eclipse/
+
+# Native build intermediates
+src/main/native/*.air
+src/main/native/*.metallib
+src/main/native/libmetalrenderer*.dylib
+
+# Pre-built dylib in resources (rebuild from source via build_native.sh)
+src/main/resources/natives/
+
+# Compiled benchmarks (rebuild from .m source files)
+bench/metal_bench
+bench/metal_bench_v2
+bench/metal_bench_opt
+bench/metal_bench_bandwidth
+bench/metal_bench_validate
+bench/metal_debug_instance
+bench/metal_debug_bisect
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.metadata
+bin/
+*.launch
+
+# OS
+.DS_Store
+
+# Secrets -- contains paths to Microsoft auth tokens
+refresh_token.py
+
+# Forge MDK
+forge*changelog.txt
+
+# Logs
+*.log
+profiler_logs/
+mdk.zip changelog.txt README.txt CREDITS.txt LICENSE.txt .gitattributes
